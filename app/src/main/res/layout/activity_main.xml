@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo11"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/todolistvalen"
+        android:backgroundTint="@color/purple_200"
+        />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kegiatan Baru"
+        android:id="@+id/newTaskButton"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        app:icon="@drawable/ic_baseline_add_box_24"
+        app:iconTint="@color/white"
+        />
+
+</RelativeLayout>
+
+    <!--
+    Penjelasan Activity_main.xml
+    Pada awalnya mengubah linear layout menjadi relatieve layout, lalu membuat beberapa button serta text view yang sudah diberi id masing masing
+    lalu mengatur warna serta tata letak dan margin
+    mengganti background aplikasi dengan gambar yang sudah dimasukan dalam direktori drawable
+    lalu membuat icon plus dengan vector asset
+    membuat recycler view dengan konfigurasi margin dan lainnya seperti diatas
+    -->
